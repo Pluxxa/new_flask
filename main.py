@@ -1,10 +1,16 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
+from datetime import datetime
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
+
+@app.route('/time')
+def get_time():
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    return jsonify(current_time=current_time)
 
 @app.route("/tom_cruze/")
 def index_1():
