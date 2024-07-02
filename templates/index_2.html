@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Том Круз</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Том Круз</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Главная</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/tom_cruze/">Том Круз</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/kianu/">Киа́ну Чарльз Ривз</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/ddepp/">Джон Кри́стофер (Джо́нни) Депп II</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основной контент -->
+    <div class="container mt-4">
+        <!-- Контейнер для фотографии -->
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <img src="{{ url_for('static', filename='image/Tom_Kruze_2.jpg') }}" class="img-fluid rounded mb-4" alt="Том Круз">
+            </div>
+        </div>
+        <!-- Контейнер для информации -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Том Круз</h1>
+                <p>Том Круз, полное имя Томас Круз Мейпотер IV, родился 3 июля 1962 года в Сиракьюс, Нью-Йорк, США. Он является американским актёром и продюсером, известным своими ролями в таких фильмах, как "Top Gun", "Mission: Impossible", "Jerry Maguire" и многих других.</p>
+                <p>Вершиной его актёрского мастерства критики считают роль в драме «Магнолия», отмеченную множеством наград. Помимо этого, Круз известен как звезда боевиков и исполнитель сложных каскадёрских трюков, он сыграл главные роли в серии фильмов «Миссия: Невыполнима», дилогии «Топ Ган» и других.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
